@@ -1,6 +1,8 @@
 # AI-Powered LinkedIn Post Generator
 
-Built with LangChain and GitHub Models API.
+An AI Agent built with LangChain that generates professional LinkedIn posts based on user-provided topic and language.
+
+---
 
 ## Agent Workflow
 
@@ -8,17 +10,18 @@ Built with LangChain and GitHub Models API.
 User Input (Topic + Language)
          |
          v
- [ Router Agent ]  <- LangChain Chain: Classifies topic as TECH or GENERAL
+ [ Agent 1: Router Agent ]
+ Analyzes and classifies topic
+ as TECH or GENERAL
          |
     _____|_____
     |         |
   TECH      GENERAL
     |         |
     v         v
- Tech      General
- Writer    Writer
- Agent     Agent
- (LangChain)(LangChain)
+[ Agent 2 ]  [ Agent 3 ]
+Tech Writer  General Writer
+  Agent        Agent
     |         |
     |_________|
          |
@@ -26,21 +29,75 @@ User Input (Topic + Language)
   Final LinkedIn Post
 ```
 
+---
+
+## Agents
+
+### Agent 1 — Router Agent
+- File: `v2_router_agent.py`
+- Job: Reads the topic and classifies it as `tech` or `general`
+- Uses: LangChain `ChatPromptTemplate` + `ChatOpenAI`
+- Output: `{"category": "tech", "reason": "..."}`
+
+### Agent 2 — Tech Writer Agent
+- File: `v3_writer_agents.py`
+- Triggered when: Router classifies topic as `tech`
+- Style: Professional, insightful, industry-aware
+- Output: 2-4 paragraphs, ends with question or CTA
+
+### Agent 3 — General Writer Agent
+- File: `v3_writer_agents.py`
+- Triggered when: Router classifies topic as `general`
+- Style: Warm, mentor-like, relatable
+- Output: 2-4 paragraphs, ends with question or CTA
+
+---
+
+## Conditional Routing Logic
+
+```python
+classification = router_agent(topic)
+
+if classification["category"] == "tech":
+    post = tech_writer_agent(topic, language)   # Agent 2
+else:
+    post = general_writer_agent(topic, language) # Agent 3
+```
+
+---
+
+## Post Requirements
+
+- 2 to 4 short paragraphs
+- Professional and engaging tone
+- Ends with a question or call-to-action
+- Written in the user-selected language
+- 1 to 3 emojis
+
+---
+
 ## Tech Stack
 
 - LangChain — Agent framework and chain building
 - LangChain OpenAI — LLM integration
-- GitHub Models API — AI model provider
+- GitHub Models API — AI model provider (openai/gpt-4.1-nano)
 - python-dotenv — Environment variable management
 
-## Files
+---
+
+## Project Files
 
 | File | Description |
 |------|-------------|
-| v1_basic_agent.py | Basic LangChain LLM call |
-| v2_router_agent.py | LangChain chain that classifies topic as Tech or General |
-| v3_writer_agents.py | Tech Writer and General Writer agents using LangChain |
-| v4_linkedin_generator.py | Final version with full conditional routing logic |
+| `v1_basic_agent.py` | Basic LangChain LLM call |
+| `v2_router_agent.py` | Agent 1 — Classifies topic as Tech or General |
+| `v3_writer_agents.py` | Agent 2 and 3 — Tech Writer and General Writer |
+| `v4_linkedin_generator.py` | Final version with full conditional routing |
+| `save_output.py` | Saves output to linkedin_output.txt with UTF-8 encoding |
+| `requirements.txt` | Python dependencies |
+| `README.md` | Project documentation |
+
+---
 
 ## Setup
 
@@ -61,27 +118,27 @@ MODEL_NAME=openai/gpt-4.1-nano
 python v4_linkedin_generator.py
 ```
 
-## LangChain Usage
-
-Each agent uses a LangChain chain built with the pipe operator:
-
-```python
-chain = prompt | llm
-response = chain.invoke({"topic": topic, "language": language})
+### 4. Save output to file
+```
+python save_output.py
 ```
 
-## Routing Logic
+---
 
-```python
-classification = router_agent(topic)
+## Demo Examples
 
-if classification["category"] == "tech":
-    post = tech_writer_agent(topic, language)
-else:
-    post = general_writer_agent(topic, language)
+### Example 1 — Tech Topic (English)
+```
+Topic    : AI in Healthcare
+Language : English
+Category : TECH
+Writer   : Tech Writer Agent
 ```
 
-## Examples
-
-- Example 1: AI in Healthcare -> TECH -> Tech Writer Agent -> English post
-- Example 2: Remote Work Productivity -> GENERAL -> General Writer Agent -> Bangla post
+### Example 2 — General Topic (Bangla)
+```
+Topic    : Remote Work Productivity
+Language : Bangla
+Category : GENERAL
+Writer   : General Writer Agent
+```
