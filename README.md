@@ -94,9 +94,9 @@ This is a classic **conditional routing** pattern - the same architecture used i
 | File | Description |
 |---|---|
 | `v1_basic_agent.py` | Baseline LangChain LLM call |
-| `v2_router_agent.py` | **Agent 1** — Classifies topic as Tech or General |
-| `v3_writer_agents.py` | **Agent 2 & 3** — Tech Writer and General Writer agents |
-| `v4_linkedin_generator.py` | Final version — full conditional routing pipeline |
+| `v2_router_agent.py` | **Agent 1** - Classifies topic as Tech or General |
+| `v3_writer_agents.py` | **Agent 2 & 3** - Tech Writer and General Writer agents |
+| `v4_linkedin_generator.py` | Final version - full conditional routing pipeline |
 | `save_output.py` | Saves generated post to `linkedin_output.txt` (UTF-8) |
 | `requirements.txt` | Project dependencies |
 
