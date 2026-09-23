@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 AI-Powered LinkedIn Post Generator
+#  AI-Powered LinkedIn Post Generator
 
 ### Multi-Agent Content Automation System built with LangChain & LLMs
 
@@ -31,7 +31,7 @@ This project demonstrates practical, production-style **agentic AI architecture*
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ```
                      ┌────────────────────────────┐
@@ -65,7 +65,7 @@ This is a classic **conditional routing** pattern — the same architecture used
 
 ---
 
-## ✨ Features
+## Features
 
 - 🤖 **Multi-Agent Architecture** — Router + specialized writer agents, not a single generic prompt
 - 🌐 **Multi-Language Support** — Generates posts in any language the user specifies (including Bangla)
@@ -77,7 +77,7 @@ This is a classic **conditional routing** pattern — the same architecture used
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -89,7 +89,7 @@ This is a classic **conditional routing** pattern — the same architecture used
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 | File | Description |
 |---|---|
@@ -102,7 +102,7 @@ This is a classic **conditional routing** pattern — the same architecture used
 
 ---
 
-## ⚡ Quick Start
+## Quick Start
 
 ### 1. Clone the repository
 ```bash
@@ -135,7 +135,7 @@ python save_output.py
 
 ---
 
-## 🎬 Demo
+## Demo
 
 **Example 1 — Tech Topic (English)**
 ```
@@ -153,7 +153,7 @@ Category : GENERAL → routed to General Writer Agent
 
 ---
 
-## 🗺 Roadmap
+## Roadmap
 
 - [ ] Streamlit / web UI for non-technical users
 - [ ] Direct LinkedIn API publishing integration
@@ -163,7 +163,7 @@ Category : GENERAL → routed to General Writer Agent
 
 ---
 
-## 🤝 Let's Connect
+## Let's Connect
 
 I build practical, production-style **AI agents and LLM-powered automation systems** — from multi-agent pipelines like this one to full-stack AI integrations for businesses.
 
@@ -175,12 +175,12 @@ If you're looking to automate content, workflows, or customer interactions with 
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-⭐ If you find this project useful, consider giving it a star — it helps a lot!
+If you find this project useful, consider giving it a star — it helps a lot!
 
 </div>
