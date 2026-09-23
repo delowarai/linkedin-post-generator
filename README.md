@@ -4,7 +4,7 @@
 
 ### Multi-Agent Content Automation System built with LangChain & LLMs
 
-*An intelligent AI agent that reads a topic, decides its category, and writes a publish-ready LinkedIn post — automatically.*
+*An intelligent AI agent that reads a topic, decides its category, and writes a publish-ready LinkedIn post - automatically.*
 
 [![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![LangChain](https://img.shields.io/badge/LangChain-Agent%20Framework-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white)](https://www.langchain.com/)
