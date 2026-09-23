@@ -19,7 +19,7 @@
 
 ## 📌 Overview
 
-Manually writing engaging, on-brand LinkedIn content every day doesn't scale. This project solves that with a **multi-agent AI pipeline** — instead of a single prompt-to-output call, it uses **conditional agent routing** to decide *how* a post should be written before it's written, resulting in more relevant, higher-quality content every time.
+Manually writing engaging, on-brand LinkedIn content every day doesn't scale. This project solves that with a **multi-agent AI pipeline** - instead of a single prompt-to-output call, it uses **conditional agent routing** to decide *how* a post should be written before it's written, resulting in more relevant, higher-quality content every time.
 
 Give it a **topic** and a **language**, and the system:
 
@@ -27,7 +27,7 @@ Give it a **topic** and a **language**, and the system:
 2. Routes it to a specialized writer agent trained for that voice
 3. Returns a publish-ready post — formatted, on-tone, and CTA-driven
 
-This project demonstrates practical, production-style **agentic AI architecture** — the same pattern used in real-world content, support, and workflow-automation tools.
+This project demonstrates practical, production-style **agentic AI architecture** - the same pattern used in real-world content, support, and workflow-automation tools.
 
 ---
 
@@ -61,7 +61,7 @@ This project demonstrates practical, production-style **agentic AI architecture*
                      └────────────────────────────┘
 ```
 
-This is a classic **conditional routing** pattern — the same architecture used in real enterprise AI agents that triage and dispatch tasks to specialized sub-agents.
+This is a classic **conditional routing** pattern - the same architecture used in real enterprise AI agents that triage and dispatch tasks to specialized sub-agents.
 
 ---
 
@@ -165,7 +165,7 @@ Category : GENERAL → routed to General Writer Agent
 
 ## Let's Connect
 
-I build practical, production-style **AI agents and LLM-powered automation systems** — from multi-agent pipelines like this one to full-stack AI integrations for businesses.
+I build practical, production-style **AI agents and LLM-powered automation systems** - from multi-agent pipelines like this one to full-stack AI integrations for businesses.
 
 If you're looking to automate content, workflows, or customer interactions with AI, I'd love to talk.
 
@@ -181,6 +181,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 <div align="center">
 
-If you find this project useful, consider giving it a star — it helps a lot!
+If you find this project useful, consider giving it a star - it helps a lot!
 
 </div>
