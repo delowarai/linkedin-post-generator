@@ -25,7 +25,7 @@ Give it a **topic** and a **language**, and the system:
 
 1. Classifies the topic (Tech vs. General)
 2. Routes it to a specialized writer agent trained for that voice
-3. Returns a publish-ready post — formatted, on-tone, and CTA-driven
+3. Returns a publish-ready post - formatted, on-tone, and CTA-driven
 
 This project demonstrates practical, production-style **agentic AI architecture** - the same pattern used in real-world content, support, and workflow-automation tools.
 
