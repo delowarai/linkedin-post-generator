@@ -67,13 +67,13 @@ This is a classic **conditional routing** pattern - the same architecture used i
 
 ## Features
 
-- 🤖 **Multi-Agent Architecture** — Router + specialized writer agents, not a single generic prompt
-- 🌐 **Multi-Language Support** — Generates posts in any language the user specifies (including Bangla)
-- 🎯 **Smart Topic Classification** — Automatically detects Tech vs. General content and adapts tone
-- ✍️ **Publish-Ready Output** — 2–4 paragraphs, natural emoji use, and a closing question/CTA for engagement
-- 💾 **Auto-Save to File** — Exports generated posts to a UTF-8 text file for easy reuse
-- 🔌 **Pluggable LLM Backend** — Powered by GitHub Models API, easily swappable with any OpenAI-compatible provider
-- 🧩 **Clean, Incremental Codebase** — Versioned build (`v1` → `v4`) showing clear architectural progression from a basic LLM call to a full routed agent system
+-  **Multi-Agent Architecture** — Router + specialized writer agents, not a single generic prompt
+-  **Multi-Language Support** — Generates posts in any language the user specifies (including Bangla)
+-  **Smart Topic Classification** — Automatically detects Tech vs. General content and adapts tone
+-  **Publish-Ready Output** — 2–4 paragraphs, natural emoji use, and a closing question/CTA for engagement
+-  **Auto-Save to File** — Exports generated posts to a UTF-8 text file for easy reuse
+-  **Pluggable LLM Backend** — Powered by GitHub Models API, easily swappable with any OpenAI-compatible provider
+-  **Clean, Incremental Codebase** — Versioned build (`v1` → `v4`) showing clear architectural progression from a basic LLM call to a full routed agent system
 
 ---
 
@@ -169,9 +169,9 @@ I build practical, production-style **AI agents and LLM-powered automation syste
 
 If you're looking to automate content, workflows, or customer interactions with AI, I'd love to talk.
 
-📧 **Email:** your-email@example.com
-💼 **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com)
-🐙 **GitHub:** [@delowarhossaincse63](https://github.com/delowarhossaincse63)
+**Email:** your-email@example.com
+**LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com)
+**GitHub:** [@delowarhossaincse63](https://github.com/delowarhossaincse63)
 
 ---
 
